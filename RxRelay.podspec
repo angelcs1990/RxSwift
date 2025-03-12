@@ -22,6 +22,10 @@ Relays for RxSwift - PublishRelay and BehaviorRelay
   s.tvos.deployment_target = '9.0'
 
   s.source_files          = 'RxRelay/**/*.{swift,h,m}'
+  
+  s.resource_bundles = {
+    'RxRelay_Privacy' => ['Sources/RxRelay/PrivacyInfo.xcprivacy'],
+  }
 
   s.dependency 'RxSwift', '~> 5'
   s.swift_version = '5.0'

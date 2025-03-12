@@ -24,6 +24,10 @@ Pod::Spec.new do |s|
 
   s.dependency 'RxSwift', '~> 5'
   s.dependency 'RxRelay', '~> 5'
+  
+  s.resource_bundles = {
+    'RxCocoa_Privacy' => ['Sources/RxCocoa/PrivacyInfo.xcprivacy'],
+  }
 
   s.swift_version = '5.0'
 end
